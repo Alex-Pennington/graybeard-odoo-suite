@@ -1,4 +1,4 @@
-# Graybeard Odoo Suite
+# Greybeard Odoo Suite
 
 **Professional Odoo modules and applications for delivery, logistics, and service businesses.**
 
@@ -8,7 +8,7 @@
 
 ---
 
-## 🚀 What is Graybeard Odoo Suite?
+## 🚀 What is Greybeard Odoo Suite?
 
 A comprehensive collection of **production-ready Odoo modules and Flask applications** designed for businesses that need sophisticated delivery, scheduling, and customer communication workflows.
 
@@ -29,7 +29,7 @@ Battle-tested in real-world operations managing thousands of deliveries, these m
 
 | Module | Description | Status |
 |--------|-------------|--------|
-| [**Delivery Calculator**](https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator) | GPS-based delivery cost calculation with Google Maps integration | ✅ Public |
+| [**Delivery Calculator**](https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator) | GPS-based delivery cost calculation with Google Maps integration | ✅ Public |
 | **Driver Portal** | Mobile-friendly driver interface for deliveries and payments | 🔒 Private |
 | **Dashboard** | Real-time operations dashboard with financial, production, and sales metrics | 🔒 Private |
 
@@ -61,7 +61,7 @@ Turn every phone call and text message into a CRM lead automatically. Includes c
 
 ---
 
-## 🎯 Why Choose Graybeard?
+## 🎯 Why Choose Greybeard?
 
 ### ✅ **Battle-Tested**
 Not proof-of-concepts - these modules powered real operations processing thousands of deliveries with 200% year-over-year growth.
@@ -89,12 +89,12 @@ Built for Odoo 19+ with backwards compatibility considerations. Modern Owl frame
 
 ```bash
 # Clone the public module
-git clone https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator
+git clone https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator
 
 # For private modules, contact repository owner for access
 
 # Copy to Odoo addons directory
-cp -r graybeard_* /path/to/odoo/addons/
+cp -r Greybeard_* /path/to/odoo/addons/
 
 # Restart Odoo
 sudo systemctl restart odoo
@@ -119,10 +119,10 @@ chmod 600 .env  # Secure the file
 
 ```bash
 # After obtaining access, clone the app
-git clone https://github.com/Alex-Pennington/graybeard-odoo-scheduler
+git clone https://github.com/Alex-Pennington/Greybeard-odoo-scheduler
 
 # Install dependencies
-cd graybeard-odoo-scheduler
+cd Greybeard-odoo-scheduler
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt

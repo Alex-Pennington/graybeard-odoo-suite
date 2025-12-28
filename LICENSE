@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 Graybeard Solutions
+Copyright (c) 2025 Greybeard Solutions
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -25,8 +25,8 @@ SOFTWARE.
 NOTE: Individual modules may be licensed under LGPL-3.0.
 Please refer to each module repository for specific license information:
 
-- graybeard_odoo_delivery_calculator: LGPL-3.0
-- graybeard_odoo_driver_portal: LGPL-3.0
-- graybeard-odoo-dashboard: LGPL-3.0
-- graybeard-odoo-scheduler: LGPL-3.0
-- graybeard-odoo-quo-integration: LGPL-3.0
+- Greybeard_odoo_delivery_calculator: LGPL-3.0
+- Greybeard_odoo_driver_portal: LGPL-3.0
+- Greybeard-odoo-dashboard: LGPL-3.0
+- Greybeard-odoo-scheduler: LGPL-3.0
+- Greybeard-odoo-quo-integration: LGPL-3.0

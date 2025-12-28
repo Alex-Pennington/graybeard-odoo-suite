@@ -1,24 +1,24 @@
 # Repository Status
 
-**Graybeard Odoo Suite - Repository Visibility**
+**Greybeard Odoo Suite - Repository Visibility**
 
 ## Component Repositories
 
 | Repository | Visibility | License | Status |
 |------------|-----------|---------|--------|
-| [graybeard_odoo_delivery_calculator](https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator) | ✅ **PUBLIC** | LGPL-3.0 | Production Ready |
-| graybeard_odoo_driver_portal | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
-| graybeard-odoo-dashboard | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
-| graybeard-odoo-scheduler | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
-| graybeard-odoo-quo-integration | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
-| graybeard-odoo-suite | 🔒 **PRIVATE** | MIT | Documentation |
+| [Greybeard_odoo_delivery_calculator](https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator) | ✅ **PUBLIC** | LGPL-3.0 | Production Ready |
+| Greybeard_odoo_driver_portal | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
+| Greybeard-odoo-dashboard | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
+| Greybeard-odoo-scheduler | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
+| Greybeard-odoo-quo-integration | 🔒 **PRIVATE** | LGPL-3.0 | Production Ready |
+| Greybeard-odoo-suite | 🔒 **PRIVATE** | MIT | Documentation |
 
 ---
 
 ## What This Means
 
 ### ✅ ONE Public Repository
-**graybeard_odoo_delivery_calculator**
+**Greybeard_odoo_delivery_calculator**
 - Anyone can view the code
 - Anyone can clone and use
 - Anyone can fork and modify
@@ -37,7 +37,7 @@
 ## Access
 
 ### Public Repository
-Visit directly: https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator
+Visit directly: https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator
 
 ### Private Repositories
 Contact repository owner for access.

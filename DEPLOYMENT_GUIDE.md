@@ -1,4 +1,4 @@
-# Graybeard Odoo Modules - Deployment Guide
+# Greybeard Odoo Modules - Deployment Guide
 
 **Version:** 1.0  
 **Date:** 2025-12-28  
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This document provides comprehensive deployment instructions for all Graybeard Odoo modules and applications. These components were battle-tested in production managing delivery and manufacturing operations with significant scale.
+This document provides comprehensive deployment instructions for all Greybeard Odoo modules and applications. These components were battle-tested in production managing delivery and manufacturing operations with significant scale.
 
 **Total Components:** 5 (3 Odoo modules + 2 Flask applications)
 
@@ -16,10 +16,10 @@ This document provides comprehensive deployment instructions for all Graybeard O
 
 ## Odoo Modules (3)
 
-### 1. Graybeard Delivery Calculator
+### 1. Greybeard Delivery Calculator
 
-**Repository:** https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator  
-**Module Name:** `graybeard_odoo_delivery_calculator`  
+**Repository:** https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator  
+**Module Name:** `Greybeard_odoo_delivery_calculator`  
 **Version:** 19.0.1.0.0  
 **License:** LGPL-3  
 **Status:** ✅ Public
@@ -47,13 +47,13 @@ GPS-based delivery cost calculator that automatically calculates delivery fees b
 **Installation:**
 ```bash
 # Clone repository
-git clone https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator
+git clone https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator
 
 # Copy to Odoo addons
-cp -r graybeard_odoo_delivery_calculator /path/to/odoo/addons/
+cp -r Greybeard_odoo_delivery_calculator /path/to/odoo/addons/
 
 # Configure environment
-cd /path/to/odoo/addons/graybeard_odoo_delivery_calculator
+cd /path/to/odoo/addons/Greybeard_odoo_delivery_calculator
 cp .env.example .env
 nano .env
 
@@ -73,10 +73,10 @@ sudo systemctl restart odoo
 
 ---
 
-### 2. Graybeard Driver Portal
+### 2. Greybeard Driver Portal
 
-**Repository:** https://github.com/Alex-Pennington/graybeard_odoo_driver_portal  
-**Module Name:** `graybeard_odoo_driver_portal`  
+**Repository:** https://github.com/Alex-Pennington/Greybeard_odoo_driver_portal  
+**Module Name:** `Greybeard_odoo_driver_portal`  
 **Version:** 19.0.1.0.0  
 **License:** LGPL-3  
 **Status:** ✅ Public
@@ -103,10 +103,10 @@ Mobile-friendly driver portal for viewing assigned deliveries and recording on-s
 **Installation:**
 ```bash
 # Clone repository
-git clone https://github.com/Alex-Pennington/graybeard_odoo_driver_portal
+git clone https://github.com/Alex-Pennington/Greybeard_odoo_driver_portal
 
 # Copy to Odoo addons
-cp -r graybeard_odoo_driver_portal /path/to/odoo/addons/
+cp -r Greybeard_odoo_driver_portal /path/to/odoo/addons/
 
 # Restart Odoo
 sudo systemctl restart odoo
@@ -128,10 +128,10 @@ sudo systemctl restart odoo
 
 ---
 
-### 3. Graybeard Dashboard
+### 3. Greybeard Dashboard
 
-**Repository:** https://github.com/Alex-Pennington/graybeard-odoo-dashboard  
-**Module Name:** `graybeard_dashboard`  
+**Repository:** https://github.com/Alex-Pennington/Greybeard-odoo-dashboard  
+**Module Name:** `Greybeard_dashboard`  
 **Version:** 19.0.1.0.0  
 **License:** LGPL-3  
 **Status:** ✅ Public
@@ -159,13 +159,13 @@ Real-time operations dashboard providing at-a-glance daily metrics for delivery 
 **Installation:**
 ```bash
 # Clone repository
-git clone https://github.com/Alex-Pennington/graybeard-odoo-dashboard
+git clone https://github.com/Alex-Pennington/Greybeard-odoo-dashboard
 
 # Copy to Odoo addons
-cp -r graybeard_dashboard /path/to/odoo/addons/
+cp -r Greybeard_dashboard /path/to/odoo/addons/
 
 # Optional: Configure weather
-cd /path/to/odoo/addons/graybeard_dashboard
+cd /path/to/odoo/addons/Greybeard_dashboard
 cp .env.example .env
 nano .env  # Set latitude/longitude
 
@@ -189,9 +189,9 @@ sudo systemctl restart odoo
 
 ## Flask Applications (2)
 
-### 4. Graybeard Odoo Scheduler
+### 4. Greybeard Odoo Scheduler
 
-**Repository:** https://github.com/Alex-Pennington/graybeard-odoo-scheduler  
+**Repository:** https://github.com/Alex-Pennington/Greybeard-odoo-scheduler  
 **Technology:** Flask + Waitress WSGI + SQLite  
 **Version:** 1.0.0  
 **License:** LGPL-3  
@@ -225,8 +225,8 @@ Web-based delivery and manufacturing scheduling system that integrates with Odoo
 **Installation:**
 ```bash
 # Clone repository
-git clone https://github.com/Alex-Pennington/graybeard-odoo-scheduler
-cd graybeard-odoo-scheduler
+git clone https://github.com/Alex-Pennington/Greybeard-odoo-scheduler
+cd Greybeard-odoo-scheduler
 
 # Create virtual environment
 python3 -m venv venv
@@ -281,9 +281,9 @@ server {
 
 ---
 
-### 5. Graybeard Odoo Quo Integration
+### 5. Greybeard Odoo Quo Integration
 
-**Repository:** https://github.com/Alex-Pennington/graybeard-odoo-quo-integration  
+**Repository:** https://github.com/Alex-Pennington/Greybeard-odoo-quo-integration  
 **Technology:** Flask webhook service + SQLite  
 **Version:** 1.0.0  
 **License:** LGPL-3  
@@ -320,8 +320,8 @@ Webhook integration service that automatically creates Odoo CRM leads when custo
 **Installation:**
 ```bash
 # Clone repository
-git clone https://github.com/Alex-Pennington/graybeard-odoo-quo-integration
-cd graybeard-odoo-quo-integration
+git clone https://github.com/Alex-Pennington/Greybeard-odoo-quo-integration
+cd Greybeard-odoo-quo-integration
 
 # Create virtual environment
 python3 -m venv venv
@@ -393,23 +393,23 @@ server {
 
 #### Phase 1: Core Odoo Modules
 **Deploy First** (if using delivery features):
-1. `graybeard_odoo_driver_portal` - Essential for driver operations
-2. `graybeard_odoo_delivery_calculator` - GPS-based pricing
+1. `Greybeard_odoo_driver_portal` - Essential for driver operations
+2. `Greybeard_odoo_delivery_calculator` - GPS-based pricing
 
 **Deploy Later**:
-3. `graybeard_dashboard` - Nice-to-have for management
+3. `Greybeard_dashboard` - Nice-to-have for management
 
 #### Phase 2: Flask Applications
 **Deploy If Needed**:
-4. `graybeard-odoo-scheduler` - Advanced scheduling features
-5. `graybeard-odoo-quo-integration` - Quo phone system users only
+4. `Greybeard-odoo-scheduler` - Advanced scheduling features
+5. `Greybeard-odoo-quo-integration` - Quo phone system users only
 
 ### Installation Order
 1. Install Odoo 19 and verify it's working
 2. Install required OCA modules (if any dependencies)
-3. Upload Graybeard Odoo modules to addons path
+3. Upload Greybeard Odoo modules to addons path
 4. Restart Odoo and update Apps List
-5. Install Graybeard modules via Apps menu
+5. Install Greybeard modules via Apps menu
 6. Configure `.env` files for each module
 7. Deploy Flask apps separately (if needed)
 8. Configure Nginx reverse proxy for Flask apps
@@ -598,11 +598,11 @@ See LICENSE file in each repository for details.
 
 | Component | Type | Priority | Repository |
 |-----------|------|----------|------------|
-| Delivery Calculator | Odoo Module | Medium | [GitHub](https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator) |
-| Driver Portal | Odoo Module | High | [GitHub](https://github.com/Alex-Pennington/graybeard_odoo_driver_portal) |
-| Dashboard | Odoo Module | Low | [GitHub](https://github.com/Alex-Pennington/graybeard-odoo-dashboard) |
-| Scheduler | Flask App | Medium | [GitHub](https://github.com/Alex-Pennington/graybeard-odoo-scheduler) |
-| Quo Integration | Flask App | Low | [GitHub](https://github.com/Alex-Pennington/graybeard-odoo-quo-integration) |
+| Delivery Calculator | Odoo Module | Medium | [GitHub](https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator) |
+| Driver Portal | Odoo Module | High | [GitHub](https://github.com/Alex-Pennington/Greybeard_odoo_driver_portal) |
+| Dashboard | Odoo Module | Low | [GitHub](https://github.com/Alex-Pennington/Greybeard-odoo-dashboard) |
+| Scheduler | Flask App | Medium | [GitHub](https://github.com/Alex-Pennington/Greybeard-odoo-scheduler) |
+| Quo Integration | Flask App | Low | [GitHub](https://github.com/Alex-Pennington/Greybeard-odoo-quo-integration) |
 
 ---
 

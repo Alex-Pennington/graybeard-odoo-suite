@@ -7,7 +7,7 @@
 | 19.x   | :white_check_mark: |
 | < 19.0   | :x:                |
 
-We currently support Graybeard modules for Odoo 19+. Older versions may work but are not officially supported.
+We currently support Greybeard modules for Odoo 19+. Older versions may work but are not officially supported.
 
 ---
 

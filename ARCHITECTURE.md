@@ -1,12 +1,12 @@
 # Architecture
 
-**Graybeard Odoo Suite - Technical Architecture**
+**Greybeard Odoo Suite - Technical Architecture**
 
 ---
 
 ## System Overview
 
-The Graybeard Odoo Suite consists of two types of components that work together to extend Odoo's capabilities:
+The Greybeard Odoo Suite consists of two types of components that work together to extend Odoo's capabilities:
 
 1. **Odoo Modules** - Native Odoo extensions (Python + XML)
 2. **Flask Applications** - Standalone web services that integrate via XML-RPC
@@ -99,7 +99,7 @@ Driver Login → Odoo Auth → Filter by x_driver_id → Display Deliveries
 **Purpose:** Real-time operations metrics
 
 **Components:**
-- `models/graybeard_dashboard.py` - Data aggregation model
+- `models/Greybeard_dashboard.py` - Data aggregation model
 - `static/src/components/` - Owl framework components
 - `static/src/scss/` - Dashboard styling
 - External API: National Weather Service (optional, US only)
@@ -389,7 +389,7 @@ CREATE TABLE call_metadata (
 
 **Components:**
 - **Nginx** - HTTPS termination, reverse proxy, load balancing
-- **Odoo** - Core application + Graybeard modules
+- **Odoo** - Core application + Greybeard modules
 - **PostgreSQL** - Main database
 - **Flask Apps** - Scheduler & Quo Integration (separate processes)
 - **SQLite** - Flask app state (could use PostgreSQL instead)

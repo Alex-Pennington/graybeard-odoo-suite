@@ -1,6 +1,6 @@
 # Getting Started
 
-**Quick start guide for deploying Graybeard Odoo Suite**
+**Quick start guide for deploying Greybeard Odoo Suite**
 
 ---
 
@@ -47,22 +47,22 @@ Not all components are required. Choose based on your needs:
 cd /path/to/odoo/addons
 
 # Clone the modules you need
-git clone https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator
-git clone https://github.com/Alex-Pennington/graybeard_odoo_driver_portal
-git clone https://github.com/Alex-Pennington/graybeard-odoo-dashboard
+git clone https://github.com/Alex-Pennington/Greybeard_odoo_delivery_calculator
+git clone https://github.com/Alex-Pennington/Greybeard_odoo_driver_portal
+git clone https://github.com/Alex-Pennington/Greybeard-odoo-dashboard
 
 # Verify
-ls -la graybeard*
+ls -la Greybeard*
 ```
 
 ### 2.2 Set Permissions
 
 ```bash
 # Set appropriate ownership (adjust user as needed)
-sudo chown -R odoo:odoo graybeard*
+sudo chown -R odoo:odoo Greybeard*
 
 # Ensure directories are readable
-sudo chmod -R 755 graybeard*
+sudo chmod -R 755 Greybeard*
 ```
 
 ### 2.3 Restart Odoo
@@ -85,7 +85,7 @@ sudo supervisorctl restart odoo
 2. Go to **Apps**
 3. Click **Update Apps List**
 4. Remove the "Apps" filter
-5. Search for "Graybeard"
+5. Search for "Greybeard"
 6. Install the modules you need
 
 ---
@@ -97,7 +97,7 @@ sudo supervisorctl restart odoo
 ### 3.1 Create Configuration
 
 ```bash
-cd /path/to/odoo/addons/graybeard_odoo_delivery_calculator
+cd /path/to/odoo/addons/Greybeard_odoo_delivery_calculator
 cp .env.example .env
 nano .env
 ```
@@ -167,7 +167,7 @@ The module creates `group_delivery_driver` automatically.
 ### 5.1 Optional Weather Setup
 
 ```bash
-cd /path/to/odoo/addons/graybeard_dashboard
+cd /path/to/odoo/addons/Greybeard_dashboard
 cp .env.example .env
 nano .env
 ```
@@ -201,8 +201,8 @@ sudo systemctl restart odoo
 ```bash
 # Clone repository
 cd /opt
-sudo git clone https://github.com/Alex-Pennington/graybeard-odoo-scheduler
-cd graybeard-odoo-scheduler
+sudo git clone https://github.com/Alex-Pennington/Greybeard-odoo-scheduler
+cd Greybeard-odoo-scheduler
 
 # Create virtual environment
 python3 -m venv venv
@@ -239,20 +239,20 @@ python app.py
 **Setup Systemd Service:**
 
 ```bash
-sudo nano /etc/systemd/system/graybeard-scheduler.service
+sudo nano /etc/systemd/system/Greybeard-scheduler.service
 ```
 
 ```ini
 [Unit]
-Description=Graybeard Scheduler
+Description=Greybeard Scheduler
 After=network.target odoo.service
 
 [Service]
 Type=simple
 User=odoo
-WorkingDirectory=/opt/graybeard-odoo-scheduler
-Environment="PATH=/opt/graybeard-odoo-scheduler/venv/bin"
-ExecStart=/opt/graybeard-odoo-scheduler/venv/bin/waitress-serve --port=5001 app:application
+WorkingDirectory=/opt/Greybeard-odoo-scheduler
+Environment="PATH=/opt/Greybeard-odoo-scheduler/venv/bin"
+ExecStart=/opt/Greybeard-odoo-scheduler/venv/bin/waitress-serve --port=5001 app:application
 Restart=always
 
 [Install]
@@ -261,9 +261,9 @@ WantedBy=multi-user.target
 
 ```bash
 sudo systemctl daemon-reload
-sudo systemctl enable graybeard-scheduler
-sudo systemctl start graybeard-scheduler
-sudo systemctl status graybeard-scheduler
+sudo systemctl enable Greybeard-scheduler
+sudo systemctl start Greybeard-scheduler
+sudo systemctl status Greybeard-scheduler
 ```
 
 ### Option B: Quo Integration
@@ -271,8 +271,8 @@ sudo systemctl status graybeard-scheduler
 ```bash
 # Clone repository
 cd /opt
-sudo git clone https://github.com/Alex-Pennington/graybeard-odoo-quo-integration
-cd graybeard-odoo-quo-integration
+sudo git clone https://github.com/Alex-Pennington/Greybeard-odoo-quo-integration
+cd Greybeard-odoo-quo-integration
 
 # Create virtual environment
 python3 -m venv venv
@@ -325,7 +325,7 @@ python quo_odoo_lead_integration.py
 ## Step 7: Configure Nginx (For Flask Apps)
 
 ```bash
-sudo nano /etc/nginx/sites-available/graybeard
+sudo nano /etc/nginx/sites-available/Greybeard
 ```
 
 ```nginx
@@ -364,7 +364,7 @@ server {
 
 ```bash
 # Enable site
-sudo ln -s /etc/nginx/sites-available/graybeard /etc/nginx/sites-enabled/
+sudo ln -s /etc/nginx/sites-available/Greybeard /etc/nginx/sites-enabled/
 
 # Test configuration
 sudo nginx -t
@@ -436,7 +436,7 @@ sudo tail -f /var/log/odoo/odoo.log
 # In Odoo: Apps → Update Apps List
 
 # Verify module in addons path
-ls -la /path/to/odoo/addons/graybeard*
+ls -la /path/to/odoo/addons/Greybeard*
 ```
 
 ### Flask App Won't Start
@@ -445,7 +445,7 @@ ls -la /path/to/odoo/addons/graybeard*
 sudo netstat -tlnp | grep 5001
 
 # Check logs
-journalctl -u graybeard-scheduler -f
+journalctl -u Greybeard-scheduler -f
 
 # Verify virtual environment
 source venv/bin/activate
@@ -455,7 +455,7 @@ python --version  # Should be 3.8+
 ### Delivery Costs Not Calculating
 ```bash
 # Check .env file exists
-ls -la /path/to/odoo/addons/graybeard_odoo_delivery_calculator/.env
+ls -la /path/to/odoo/addons/Greybeard_odoo_delivery_calculator/.env
 
 # Verify values are set
 cat .env | grep DELIVERY_ORIGIN
@@ -470,7 +470,7 @@ sudo tail -f /var/log/odoo/odoo.log
 curl https://your-domain.com/webhook/quo
 
 # Check Flask app logs
-journalctl -u graybeard-quo -f
+journalctl -u Greybeard-quo -f
 
 # Verify signing secret matches Quo dashboard
 cat .env | grep QUO_SIGNING_SECRET

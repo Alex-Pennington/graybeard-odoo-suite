@@ -30,15 +30,15 @@ Battle-tested in real-world operations managing thousands of deliveries, these m
 | Module | Description | Status |
 |--------|-------------|--------|
 | [**Delivery Calculator**](https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator) | GPS-based delivery cost calculation with Google Maps integration | ✅ Public |
-| [**Driver Portal**](https://github.com/Alex-Pennington/graybeard_odoo_driver_portal) | Mobile-friendly driver interface for deliveries and payments | ✅ Public |
-| [**Dashboard**](https://github.com/Alex-Pennington/graybeard-odoo-dashboard) | Real-time operations dashboard with financial, production, and sales metrics | ✅ Public |
+| **Driver Portal** | Mobile-friendly driver interface for deliveries and payments | 🔒 Private |
+| **Dashboard** | Real-time operations dashboard with financial, production, and sales metrics | 🔒 Private |
 
 ### Flask Applications (2)
 
 | Application | Description | Status |
 |-------------|-------------|--------|
-| [**Scheduler**](https://github.com/Alex-Pennington/graybeard-odoo-scheduler) | Advanced scheduling system with calendar views, public booking widget, and Google Calendar sync | ✅ Public |
-| [**Quo Integration**](https://github.com/Alex-Pennington/graybeard-odoo-quo-integration) | Webhook service for Quo (OpenPhone) that auto-creates CRM leads from calls and SMS | ✅ Public |
+| **Scheduler** | Advanced scheduling system with calendar views, public booking widget, and Google Calendar sync | 🔒 Private |
+| **Quo Integration** | Webhook service for Quo (OpenPhone) that auto-creates CRM leads from calls and SMS | 🔒 Private |
 
 ---
 
@@ -88,10 +88,10 @@ Built for Odoo 19+ with backwards compatibility considerations. Modern Owl frame
 ### 1. Install Odoo Modules
 
 ```bash
-# Clone the module you need
+# Clone the public module
 git clone https://github.com/Alex-Pennington/graybeard_odoo_delivery_calculator
-git clone https://github.com/Alex-Pennington/graybeard_odoo_driver_portal
-git clone https://github.com/Alex-Pennington/graybeard-odoo-dashboard
+
+# For private modules, contact repository owner for access
 
 # Copy to Odoo addons directory
 cp -r graybeard_* /path/to/odoo/addons/
@@ -115,8 +115,10 @@ chmod 600 .env  # Secure the file
 
 ### 3. Deploy Flask Apps (Optional)
 
+**Note:** Flask applications are in private repositories. Contact repository owner for access.
+
 ```bash
-# Clone the app
+# After obtaining access, clone the app
 git clone https://github.com/Alex-Pennington/graybeard-odoo-scheduler
 
 # Install dependencies
